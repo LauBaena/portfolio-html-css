@@ -1,0 +1,220 @@
+:root{
+    --primary-color: rgb(53, 53, 49);
+}
+
+body{
+    background-color: #FFF;
+    color:rgb(114, 114, 110);
+}
+
+.nav {
+    background-color: var(--primary-color);
+    padding: 15px 0; 
+    text-align: right;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav .navlinks{
+    display: none;
+}
+
+.nav .navlinks .link{
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 20px;
+;}
+
+.nav .logo{
+    /* Definimos el tamaño del círculo */
+    height: 200px;
+    width: 200px;
+    /*Creamos el círculo*/
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+.footer {
+    background-color:var(--primary-color);
+    padding: 30px 0; 
+    display: flex;
+    justify-content: center;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.footer .link {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.nombre{
+    font-size: 2rem;
+    margin: 15px;
+    font-weight:bold;
+    color: #FFF;
+}
+
+.titulo{
+    font-size: 4rem;
+    color:rgb(114, 114, 110);
+    padding: 20px 0px; 
+    text-align: center;
+}
+
+.descripcion{
+    font-size: 1.25rem;
+    margin: 10px 5px;
+    padding: 5px 10px; 
+    text-align: center;
+}
+
+.info{
+    font-size: 1.25rem;
+    margin: 0px 5px;
+    padding: 10px 10px; 
+}
+
+.recuadro{
+    margin: 15px 15px;
+    color:rgb(114, 114, 110);
+}
+
+.boton{
+    padding: 5px 10px;
+    margin: 15px 15px;
+    border-color: goldenrod;
+    background-color: goldenrod;
+    border-radius: 10%;
+    color:var(--primary-color);;
+}
+
+.titulo-questionario{
+    font-size: 1.75rem;
+    margin: 30px 0px 0px 5px;
+    padding: 10px 10px; 
+}
+
+.habilidades{
+    font-size: 1.25rem;
+    margin: 15px 5px;
+    padding: 10px 10px; 
+}
+
+.skill {
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: 8px;
+    height: 1em;
+    margin: 15px 5px;
+}
+
+.skillAnimation {
+    background-color: goldenrod;
+    border-radius: 8px;
+    height: 1em;
+}
+
+#skillProblemas {
+    animation-name: animacionProblemas;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#skillCreatividad {
+    animation-name: animacionCreatividad;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#skillEquipo {
+    animation-name: animacionEquipo;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#skillAprendizaje {
+    animation-name: animacionAprendizaje;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.tituloPortfolio{
+    background: center url(../images/foto2.jpg) no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    animation: animacionFoto 5s;
+    font-size: 4rem;
+    color:#FFF;
+    padding: 20px 0px; 
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+@keyframes animacionFoto{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animacionProblemas {
+    0% { 
+        width: 0; 
+    }
+    100% { 
+        width: 75%; 
+    }
+}
+
+@keyframes animacionCreatividad {
+    0% {
+         width: 0; 
+    }
+    100% { 
+        width: 55%; 
+    }
+}
+@keyframes animacionEquipo {
+    0% {
+         width: 0; 
+    }
+    100% { 
+        width: 85%; 
+    }
+}
+@keyframes animacionAprendizaje {
+    0% { 
+        width: 0; 
+    }
+    100% { 
+        width: 80%; 
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .nav .navlinks{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .nav .navlinks .link{
+        transition: color 0.3s linear 
+    }
+    .nav .navlinks .link:hover{  
+        color:rgb(158, 155, 155);
+    }
+}

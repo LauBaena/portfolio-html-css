@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Portfolio</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <img class="logo" src="images/foto_perfil.jpg" title="Laura Baena" alt="Laura Baena jpg">
+        <div class="navlinks">
+            <a class="link" href="#cabecera">Proyectos</a>
+            <a class="link" href="#skills">Skills</a>
+            <a class="link" href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header id="cabecera">
+        <hgroup>
+            <div class="tituloPortfolio">
+                <h1>Laura Baena Bueno Portfolio</h1>
+            </div>
+            <!-- <h1 class="titulo">Portfolio</h1>-->
+            <!-- <img class="fotoCabecera" src="foto2.jpg" width="500px" title="Laura Baena" alt="Laura Baena jpg">-->
+        </hgroup>
+    </header>
+
+    <main>
+
+        <section> 
+            <article>
+                <p class="descripcion"> Soy maestra de inglés y estudiante del grado superior de Desarrollo de Aplicaciones Web (DAW) en IOC y del bootcamp Women in Tech, a manos de KeepCoding y Glovo.</p>
+                <p class="descripcion"> Me encanta viajar, el cine, la lectura, la música y el deporte. Para explicaros un poco más sobre mi, decir que, para unir mi deseo de viajar y mis ganas de mejorar profesionalmente como meastra de inglés, pasé año y medio en Australia. Al volver decidí dar un giro a mi carrera y probar si encontraba en la programación mi pasión. Estoy convencida de que así ha sido.</p>
+                <p class="descripcion"> Como puntos fuertes, mencionar mi capacidad de resolución de problemas, mis habilidades e interés por el trabajo en equipo, mi motivación por continuar aprendiendo y mi capacidad de innovación y creatividad </p>
+            </article>
+        </section>
+
+        <section id="skills"> 
+            <article>
+
+                <h1 class="titulo">Skills</h1>
+
+                <span class="habilidades">Resolución de problemas</span>
+                <div class="skill">
+                    <div class="skillAnimation" id="skillProblemas"></div>
+                </div>
+
+                <span class="habilidades">Innovación y creatividad</span>
+                <div class="skill">
+                    <div class="skillAnimation" id="skillCreatividad"></div>
+                </div>
+
+                <span class="habilidades">Habilidades para trabajar en equipo</span>
+                <div class="skill">
+                    <div class="skillAnimation" id="skillEquipo"></div>
+                </div>
+
+                <span class="habilidades">Capacidad de aprendizaje rápido</span>
+                <div class="skill">
+                    <div class="skillAnimation" id="skillAprendizaje"></div>
+                </div>
+
+            </article>
+        </section>
+
+        <section id="contacto">
+
+            <h1 class="titulo">Contacto</h1>
+
+            <form action="registro-formulario.html">
+
+                <fieldset>
+
+                    <p class="titulo-questionario">Datos personales</p>
+
+                    <div class="info">
+                        <label for="name">Nombre</label> 
+                        <input required id="name" name="name" type="text" size=30 placeholder="Añade tu nombre">
+                        <label for="surname">Apellido</label> 
+                        <input required id="surname" name="surname" type="text" size=30 placeholder="Añade tu apellido">
+                    </div>
+
+                    <div class="info">
+                        <label for="phone">Teléfono</label>
+                        <input required id="phone" name="phone" type="tel" size=30 placeholder="Añade tu número de teléfono">
+                        <label for="gitusername">Github username</label> 
+                        <input id="gitusername" name="gitusername" type="text" size=30 pattern="^@[^\s]+" placeholder="Formato válido: (@<username>)">
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend class="titulo-questionario">¿Cómo me conociste?</legend>
+
+                    <div class="info">
+                        <label for="contactChoice1">Universidad</label>
+                        <input required type="radio" id="contactChoice1" name="contact" value="universidad" />
+                    </div>
+                    <div class="info">
+                        <label for="contactChoice2">Keepcoding kick-off</label>
+                        <input required type="radio" id="contactChoice2" name="contact" value="keepcoding" />
+                    </div>
+                    <div class="info">
+                        <label for="contactChoice3">Colegio</label>     
+                        <input required type="radio" id="contactChoice3" name="contact" value="colegio" />
+                    </div>
+                    <div class="info">
+                        <label for="contactChoice4">Github</label>
+                        <input required type="radio" id="contactChoice4" name="contact" value="github" />
+                    </div>
+
+                </fieldset>
+
+                <div>
+                    <p><label class="titulo-questionario" for="text">Más información</label></p>
+                    <textarea class="recuadro"  required id="text" name="textarea" rows="10" cols="40" maxlength="180">¿Qué más quieres saber?</textarea>
+                </div>
+
+                <input class="boton" type="submit" value="Enviar">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- pie de página -->
+    <footer class="footer">
+
+        <a class="link" href="https://github.com/LauBaena" target="_blank">
+            <img class="icon" src="images/git-logo.png" title="Github" alt="Github icon">
+        </a>
+        <a class="link" href="https://www.instagram.com/laura_baena/" target="_blank">
+            <img class="icon" src="images/Instagram-Icon.png" title="Instagram" alt="Instagram icon">
+        </a>
+        <a class="link" href="https://twitter.com/baena_lau" target="_blank">
+            <img class="icon" src="images/twitter-logo.png" title="Twitter" alt="Twitter icon">
+        </a>
+        <a class="link" href="https://www.linkedin.com/in/laubaena/" target="_blank">
+            <img class="icon" src="images/linkedin-icon.png" title="LinkedIn" alt="LinkedIn icon">
+        </a>
+
+    </footer>
+
+</body>
+
+</html>
